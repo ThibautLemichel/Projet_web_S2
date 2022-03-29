@@ -1,0 +1,38 @@
+Objectif :
+Réaliser un site web dynamique composé de trois pages (au moins) avec du PHP/MySQL,
+HTML5 et CSS3. Vous pouvez utiliser le site web statique réalisé au premier semestre (vous
+n’avez pas besoin d’ajouter du PHP à toutes les pages, 3 pages sont suffisantes.)
+Le site doit mettre en avant vos compétences PHP/MySQL acquises.
+Consignes :
+• Le site comporte obligatoirement au moins un formulaire et son traitement.
+• Les informations du site sont stockées dans une base de données MySQL : deux ou
+trois tables sont suffisantes.
+➢ Des informations issues de la base doivent être affichées sur le site.
+➢ Des informations issues du site (exemple formulaire) doivent pouvoir être
+insérées/ supprimées et modifiées dans la base de données.
+• Le code doit être factorisé (fonction include PHP – pas de copier/coller entre vos
+pages) ; par exemple : la connexion à la base, entête, pied de page, ….
+• Le site doit contenir un formulaire d’authentification permettant d’accéder à
+certaines pages (ou fonctionnalités) de votre site à l’aide des variables de session,
+• Le site doit utiliser des cookies
+• Le site doit être accompagné d’un rapport (3 pages maximum), contenant le
+diagramme de classe d’UML de votre base de données et décrivant l’utilisation du
+PHP dans votre site.
+Soumission :
+• Soumission : Dossier compressé, contenant votre site web et le rapport, nommé
+Nom1_Nom2_Nom3
+• Date limite : Dimanche 07/05/2022 à 23h59
+--------------------------------------------------------------------------------------------------------------
+3 pages :
+- connexion
+- forum (affiche les informations de la BD)
+- page vérifie les informations
+
+Cookie
+- Nom
+- email
+- carte bancaire
+
+Factorisation de code :
+- include('connexion.php')
+
