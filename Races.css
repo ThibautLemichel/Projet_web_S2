@@ -1,0 +1,408 @@
+*::selection {
+    color: saddlebrown;
+    background-color: floralwhite;
+}
+
+body{
+    background-color : floralwhite;
+}
+
+#sousmain {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 3px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas:
+        "BAust BAll"
+        "Labra Loulou"
+        "Husk King";
+    grid-gap: 5px;
+}
+
+#main > h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#bergaustr{
+    grid-area:BAust;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+        "photo1 nom1"
+        "photo1 table1";
+    grid-gap: 5px;
+    padding: 10px;
+    background-color: floralwhite;
+    border: dashed 3px brown;
+}
+
+#photobergaustr{
+    grid-area: photo1;
+}
+
+#nombergaustr{
+    grid-area: nom1;
+}
+
+#tablbergaustr{
+    grid-area: table1;
+}
+
+#photobergaustr > img{
+    width: 200px;
+}
+
+#nombergaustr > h2{
+    text-align: center;
+}
+
+#tablbergaustr > table{
+    border: solid 2px brown;
+    width : 100%;
+}
+
+#bergall {
+    grid-area: BAll;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+        "photo2 nom2"
+        "photo2 table2";
+    grid-gap: 5px;
+    padding: 10px;
+    background-color: floralwhite;
+    border: dashed 3px brown;
+}
+
+#photobergall {
+    grid-area: photo2;
+}
+
+#nombergall {
+    grid-area: nom2;
+}
+
+#tablbergall {
+    grid-area: table2;
+}
+
+#photobergall > img {
+    width: 200px;
+}
+
+#nombergall > h2 {
+    text-align: center;
+}
+
+#tablbergall > table {
+    border: solid 2px brown;
+    width: 100%;
+}
+
+#labra {
+    grid-area: Labra;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+        "photo3 nom3"
+        "photo3 table3";
+    grid-gap: 5px;
+    padding: 10px;
+    background-color: floralwhite;
+    border: dashed 3px brown;
+}
+
+#photolabra {
+    grid-area: photo3;
+}
+
+#nomlabra {
+    grid-area: nom3;
+}
+
+#tabllabra {
+    grid-area: table3;
+}
+
+#photolabra > img {
+    width: 200px;
+}
+
+#nomlabra > h2 {
+    text-align: center;
+}
+
+#tabllabra > table {
+    border: solid 2px brown;
+    width: 100%;
+}
+
+#Loulou {
+    grid-area: Loulou;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+        "photo4 nom4"
+        "photo4 table4";
+    grid-gap: 5px;
+    padding: 10px;
+    background-color: floralwhite;
+    border: dashed 3px brown;
+}
+
+#photoLoulou {
+    grid-area: photo4;
+}
+
+#nomLoulou {
+    grid-area: nom4;
+}
+
+#tablLoulou {
+    grid-area: table4;
+}
+
+#photoLoulou > img {
+    width: 200px;
+}
+
+#nomLoulou > h2 {
+    text-align: center;
+}
+
+#tablLoulou > table {
+    border: solid 2px brown;
+    width: 100%;
+}
+
+#Husk {
+    grid-area: Husk;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+        "photo5 nom5"
+        "photo5 table5";
+    grid-gap: 5px;
+    padding: 10px;
+    background-color: floralwhite;
+    border: dashed 3px brown;
+}
+
+#photoHusk {
+    grid-area: photo5;
+}
+
+#nomHusk {
+    grid-area: nom5;
+}
+
+#tablHusk {
+    grid-area: table5;
+}
+
+#photoHusk > img {
+    width: 200px;
+}
+
+#nomHusk > h2 {
+    text-align: center;
+}
+
+#tablHusk > table {
+    border: solid 2px brown;
+    width: 100%;
+}
+
+#King {
+    grid-area: King;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 67px 1fr;
+    grid-template-areas:
+        "photo6 nom6"
+        "photo6 table6";
+    grid-gap: 5px;
+    padding: 10px;
+    background-color: floralwhite;
+    border: dashed 3px brown;
+}
+
+#photoKing {
+    grid-area: photo6;
+}
+
+#nomKing {
+    grid-area: nom6;
+}
+
+#tablKing {
+    grid-area: table6;
+}
+
+#photoKing > img {
+    width: 200px;
+}
+
+#nomKing > h2 {
+    text-align: center;
+}
+
+#tablKing > table {
+    border: solid 2px brown;
+    width: 100%;
+}
+
+@media only-screen and (max-width : 375px) {
+    #sousmain {
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-bottom: 30px;
+        background-color: white;
+        padding: 10px;
+        box-shadow: 0 0 3px black;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+        grid-template-areas:
+            "BAust"
+            "BAll"
+            "Labra"
+            "Loulou"
+            "Husk"
+            "King";
+        grid-gap: 5px;
+    }
+
+    #bergaustr {
+        grid-area: BAust;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas:
+            "nom1 nom1"
+            "photo1 table1";
+        grid-gap: 5px;
+        padding: 10px;
+        background-color: floralwhite;
+        border: dashed 3px brown;
+    }
+
+    #bergall {
+        grid-area: BAll;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas:
+            "nom2 nom2"
+            "photo2 table2";
+        grid-gap: 5px;
+        padding: 10px;
+        background-color: floralwhite;
+        border: dashed 3px brown;
+    }
+
+    #labra {
+        grid-area: Labra;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas:
+            "nom3 nom3"
+            "photo3 table3";
+        grid-gap: 5px;
+        padding: 10px;
+        background-color: floralwhite;
+        border: dashed 3px brown;
+    }
+
+    #Loulou {
+        grid-area: Loulou;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas:
+            "nom4 nom4"
+            "photo4 table4";
+        grid-gap: 5px;
+        padding: 10px;
+        background-color: floralwhite;
+        border: dashed 3px brown;
+    }
+
+    #Husk {
+        grid-area: Husk;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas:
+            "nom5 nom5"
+            "photo5 table5";
+        grid-gap: 5px;
+        padding: 10px;
+        background-color: floralwhite;
+        border: dashed 3px brown;
+    }
+
+    #photoHusk {
+        grid-area: photo5;
+    }
+
+    #nomHusk {
+        grid-area: nom5;
+    }
+
+    #tablHusk {
+        grid-area: table5;
+    }
+
+    #photoHusk > img {
+        width: 200px;
+    }
+
+    #nomHusk > h2 {
+        text-align: center;
+    }
+
+    #tablHusk > table {
+        border: solid 2px brown;
+        width: 100%;
+    }
+
+    #King {
+        grid-area: King;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 56px 1fr;
+        grid-template-areas:
+            "nom6 nom6"
+            "photo6 table6";
+        grid-gap: 5px;
+        padding: 10px;
+        background-color: floralwhite;
+        border: dashed 3px brown;
+    }
+    #photoKing {
+        grid-area: photo6;
+    }
+
+    #nomKing {
+        grid-area: nom6;
+    }
+
+    #tablKing {
+        grid-area: table6;
+    }
+}

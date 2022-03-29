@@ -1,0 +1,76 @@
+*::selection {
+    color: saddlebrown;
+    background-color: floralwhite;
+}
+
+body {
+    background-color: floralwhite;
+}
+
+#main{
+    padding-left : 15%;
+    padding-right : 15%;
+    padding-bottom: 10px;
+}
+
+#main > h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding : 30px;
+}
+
+#main1 {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    box-shadow: 0 5px 15px black;
+    padding: 20px;
+    background-color: white;
+}
+
+#intro {
+    font-size : 20px;
+    margin-bottom : 20px;
+}
+
+.dvlp{
+    border-top : solid 3px grey;
+}
+
+.dvlp > h2 {
+    color : darkgrey;
+    font-size : 30px;
+    margin-top : 100px;
+    margin-bottom : 10px;
+    font-weight : 900;
+}
+
+.dvlp > ul {
+    font-size: 20px;
+    list-style-image: url('Images/liste3.png');
+    list-style-position: inherit;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.dvlp > ul > li{
+    padding : 10px;
+}
+
+.dvlp > p {
+    font-size: 20px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width : 768px) {
+    #main {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media only screen and (max-width : 375px){
+    #main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

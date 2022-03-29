@@ -1,0 +1,97 @@
+*::selection {
+    color: saddlebrown;
+    background-color: floralwhite;
+}
+
+body {
+    background-color: floralwhite;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+#main > h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 30px;
+}
+
+.positif {
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    box-shadow: 0 5px 15px black;
+}
+
+.positif > p {
+    padding: 20px;
+    font-size: 30px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.pos{
+    padding : 20px;
+    border-top : solid 3px grey;
+    margin : 10px;
+}
+
+.pos > h2 {
+    color: darkgrey;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.pos > p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.pos > ul {
+    font-size: 20px;
+    list-style-image: url('Images/liste3.png');
+    list-style-position: inside;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.pos > ul > li {
+    padding: 10px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (max-width : 378px) {
+    .positif {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+        .positif > p {
+            padding: 5px;
+            font-size: 20px;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+        .pos > p {
+            margin-bottom : 5px;
+            font-size: 20px;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+}
+
+@media only screen and (max-width : 769px) {
+    .positif {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .positif > p {
+        padding: 10px;
+        font-size: 20px;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    .pos > p {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+}
