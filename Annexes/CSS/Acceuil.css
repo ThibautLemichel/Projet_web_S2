@@ -118,7 +118,7 @@ body{
     }
 
         #image1:hover {
-            background-image: src(Images/chein+maitre.jpg);
+            background-image: src(AImages/chein+maitre.jpg);
         }
 
     #texte1 {

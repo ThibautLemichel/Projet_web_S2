@@ -7,11 +7,11 @@
     padding: 0;
     font-family: American Typewriter, serif ;
 }
-/*Début menu*/
+/*Dï¿½but menu*/
 nav {
     width : 100% ;  /*Permet au menu de prendre toute la place en largeur*/
     font-size : medium ;
-    position : sticky ;  /*il reste collé en haut de la page*/
+    position : sticky ;  /*il reste collï¿½ en haut de la page*/
     top : 0 ;  /*le menu est le plus possible en haut de la page*/
     clear : both;
 }
@@ -74,9 +74,9 @@ nav > ul > li:hover > a {
 }
 
 .sous-menu > li:hover {
-    background-image : url(images/Chienquicourt.gif) ; /*met une image de chien animée lorsqu'on défile les sous-menus*/
+    background-image : url(../Images/Chienquicourt.gif) ; /*met une image de chien animï¿½e lorsqu'on dï¿½file les sous-menus*/
     background-size : contain ;  /*permet de faire que l'image rentre dans les balises des sous-menus*/
-    background-position : right center ; /*l'image est à droite*/
+    background-position : right center ; /*l'image est ï¿½ droite*/
     background-repeat : no-repeat ;  /*en seulement 1 exemplaire*/
 }
 
@@ -84,7 +84,7 @@ nav > ul > li:hover > a {
     color : saddlebrown ;
 }
 
-@keyframes défile { /*permet de créer un flèche qui va tourner pour par la suite faire dérouler les sous-menus*/
+@keyframes dï¿½file { /*permet de crï¿½er un flï¿½che qui va tourner pour par la suite faire dï¿½rouler les sous-menus*/
     0% {
         transform : rotate(0deg) ;
     }
@@ -94,10 +94,10 @@ nav > ul > li:hover > a {
 }
 
 .menu-deroulant:hover > a:after {
-    animation : défile 0.2s linear forwards ; /*le forwards permet de faire en sorte que l'animation reste à la fin de celle-ci*/
+    animation : dï¿½file 0.2s linear forwards ; /*le forwards permet de faire en sorte que l'animation reste ï¿½ la fin de celle-ci*/
 }
 
-@keyframes sousmenu {  /*va permettre de faire défiler les sous-menus*/
+@keyframes sousmenu {  /*va permettre de faire dï¿½filer les sous-menus*/
     0% {
         box-shadow : 0px 2px 2px 1px ;
         border-top : 0px solid black ;
@@ -113,10 +113,10 @@ nav > ul > li:hover > a {
 }
 
 .menu-deroulant:hover > .sous-menu { /*animation finale des sous-menus*/
-    animation : sousmenu 1s forwards ;  /*le forwards permet que l'animation reste fixe à la fin de celle-ci*/
+    animation : sousmenu 1s forwards ;  /*le forwards permet que l'animation reste fixe ï¿½ la fin de celle-ci*/
 }
 /*Fin menu*/
-/*Début haut de page*/
+/*Dï¿½but haut de page*/
 #header > img {
     margin-top : 10px;
     margin-left : 30%;
@@ -135,7 +135,7 @@ nav > ul > li:hover > a {
     color : black;
 }
 /*fin haut de page*/
-/*début footer*/
+/*dï¿½but footer*/
 .footer{
     background-color : antiquewhite;
     display : grid;
