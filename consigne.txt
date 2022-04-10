@@ -28,7 +28,6 @@ Nom1_Nom2_Nom3
 - forum (affiche les informations de la BD)
 - page vérifie les informations
 
-
 Cookie
 - Nom
 - email

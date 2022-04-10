@@ -31,6 +31,7 @@
                                 echo "<th>Pseudo</th>";
                                 echo "<th>Email</th>";
                                 echo "<th>Mot de Passe</th>";
+                                echo "<th>Admin</th>";
                             echo "</tr>";
                         echo "</thead>";
                         echo "<tbody>";

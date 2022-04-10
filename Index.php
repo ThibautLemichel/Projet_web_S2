@@ -1,3 +1,8 @@
+<?php
+    session_start();
+?>
+
+
 <!DOCTYPE html>
 <link rel="stylesheet" href="Annexes/CSS/ProjetChien.css" />
 <link rel="stylesheet" href="Annexes/CSS/Acceuil.css" />
@@ -40,10 +45,49 @@
     <div id="main">
         <div id="Titre">
             <div class="Titre">
-                <h1>Bienvenue à toi</h1>
+                <h1>Bienvenue </h1>
             </div>
         </div>
-
+        <?php
+        if (!isset($_SESSION['login'])){
+        ?>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Formulaire d'authentification</legend>
+                <label>Email :</label>
+                <input type="text" name="email" placeholder="Entrez votre adresse mail" required>
+                <label>Password :</label>
+                <input type="text" name="passwd"  placeholder="Entrez votre mot de passe" required>
+                <input type="submit" name="Envoyer" value="Envoyer"/>
+            </fieldset>
+        </form>
+        <?php
+         }
+         if(isset($_POST['email']) && isset($_POST['passwd'])){
+			$email = $_POST['email'];
+			$mdp = $_POST['passwd'];
+            
+            //include('Annexes/PHP/connexion.php');
+            include('Annexes/PHP/connexion.php');
+            
+            $requete_email = "SELECT Email WHERE Email = $email";
+            $requete_mdp = "SELECT MotDePasse WHERE Email = $email";
+            $resultat_email = mysqli_query($connexion, $resultat_email);
+            $resultat_mdp = mysqli_query($connexion, $resultat_mdp);
+            
+            if ($resultat_email == 1){
+                echo "Mail valide<br>";
+            }else{
+                echo "Mail pas valide<br>";
+            }
+            if ($resultat_mdp == 1){
+                echo "MdP valide<br>";
+            }else{
+                echo "MdP pas valide<br>";
+            }
+			 
+		}
+         ?>
         <div id="Fixed">
             <div id="image1">
                 <img src="Annexes/Images/chein+maitre.jpg" alt="image d'un chien et de son maitre" />
