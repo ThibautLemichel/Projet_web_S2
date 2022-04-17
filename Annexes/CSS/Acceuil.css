@@ -4,7 +4,8 @@
 }
 
 body{
-    background-color : floralwhite;
+    /*background-color : floralwhite;*/
+    background-color: blue;
 }
 
 #main{
@@ -85,6 +86,9 @@ body{
     color: darkgray;
 }
 
+.login{
+    text-align: center;
+}
 
 @media only screen and (min-width : 768px) {
     .Titre {

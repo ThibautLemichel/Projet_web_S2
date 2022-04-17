@@ -5,7 +5,7 @@
 
 <!DOCTYPE html>
 <link rel="stylesheet" href="Annexes/CSS/ProjetChien.css" />
-<link rel="stylesheet" href="Annexes/CSS/Acceuil.css" />
+<link rel="stylesheet" href="Annexes/CSS/Acceuil.css"/>
 <html lang="fr-fr">
 <head>
     <meta charset="utf-8" />
@@ -51,13 +51,12 @@
         <?php
         if (!isset($_SESSION['login'])){
         ?>
-        <form action="" method="post">
-            <fieldset>
-                <legend>Formulaire d'authentification</legend>
-                <label>Email :</label>
+        <form action="" method="post" class="login">
+            <fieldset> 
                 <input type="text" name="email" placeholder="Entrez votre adresse mail" required>
-                <label>Password :</label>
+                </br>
                 <input type="text" name="passwd"  placeholder="Entrez votre mot de passe" required>
+                </br>
                 <input type="submit" name="Envoyer" value="Envoyer"/>
             </fieldset>
         </form>
