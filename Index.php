@@ -36,31 +36,45 @@
                         <li><a href="Annexes/HTML/Les premiers jours de son arrivée.html">Les premiers jours de son arrivée</a></li>  <!--sous-pages des grandes pages-->
                     </ul>
                 </li>
-                <li><a href="Annexes/HTML/Contact.html">Contactez-nous</a></li>  <!--grandes pages-->
+                <li class="menu-deroulant">
+                <a href="">Notre communauté</a>
+                    <ul class="sous-menu">
+                        <li><a href="Annexes/HTML/Contact.html">Contactez-nous</a></li>  <!--grandes pages-->
+                        <li><a href="Annexes/PHP/forum.php">Nos forums</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>  <!--Ici finit le menu en haut de la page-->
         
     </div>
 
     <div id="main">
-        <div id="Titre">
-            <div class="Titre">
-                <h1>Bienvenue </h1>
-            </div>
-        </div>
         <?php
         if (!isset($_SESSION['login'])){
         ?>
+        <div id="Titre">
+            <div class="Titre">
+                <h1>Bienvenue</h1>
+            </div>
+        </div>
         <form action="" method="post" class="login">
             <fieldset> 
-                <input type="text" name="email" placeholder="Entrez votre adresse mail" required>
+                <input type="text" name="email" placeholder="Adresse mail" required>
                 </br>
-                <input type="text" name="passwd"  placeholder="Entrez votre mot de passe" required>
+                <input type="text" name="passwd"  placeholder="Mot de passe" required>
                 </br>
-                <input type="submit" name="Envoyer" value="Envoyer"/>
+                <input type="submit" name="Envoyer" value="Connecter" class="bouton_login"/>
             </fieldset>
         </form>
         <?php
+         }else{
+         ?>
+         <div id="Titre">
+            <div class="Titre">
+                <h1>Bienvenue ^<?php $_SESSION['pseudo'] ?></h1>
+            </div>
+        </div>
+         <?php
          }
          if(isset($_POST['email']) && isset($_POST['passwd'])){
 			$email = $_POST['email'];
