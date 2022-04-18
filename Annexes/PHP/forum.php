@@ -41,6 +41,58 @@
         </nav>  <!--Ici finit le menu en haut de la page-->
     </div>
     <h1>Nos forums</h1>
+    
+    <?php
+         include("connexion.php");
+            /* On teste si la page arrive à récupérer les données */
+			$requete = 'SELECT * FROM forum';//La requere SQL
+			$resultat = mysqli_query($connexion, $requete); //Executer la requete
+			
+			if ( $resultat == FALSE ){
+				echo "<p>Erreur d'exécution de la requete :".mysqli_error($connexion)."</p>" ;
+				die();
+			}
+			else {
+                /* A retravailler */
+                
+                $requete_limite = 'SELECT MAX(Indice) AS Maximum FROM forum';
+			    $resultat_limite = mysqli_query($connexion, $requete_limite);
+                
+			    if ( $resultat_limite == FALSE ){
+				echo "<p>Erreur d'exécution de la requete :".mysqli_error($connexion)."</p>" ;
+				die();
+			    }
+                
+                $limite = mysqli_fetch_assoc($resultat_limite);
+                echo $limite;
+   
+
+                
+                $limite = 1;
+                $forum = mysqli_fetch_assoc($resultat);
+                for ($i = 0; $i< $limite; $i++){ // Affiche tous les forums
+                    echo "<div>";
+                        echo "<table>";
+                            echo "<tbody>";
+                                echo "<tr>";
+                                    echo "<td colspan='2' class='Sujet'>$forum[Sujet]</td>";
+                                    echo "</tr>";
+                                    echo "<tr>";
+                                    echo "<td class='Pseudo'>$forum[Pseudo]</td>";
+                                    echo "<td class='Date'>$forum[Date]</td>";
+                                echo "</tr>";
+                                echo "<tr>";
+                                    echo "<td colspan='2' class='Message'>$forum[Message]</td>";
+                                echo "</tr>";
+                            echo "</tbody>";
+                        echo "</table>";
+                    echo "</div>";
+                }
+                
+
+                
+            }
+            ?>
 
     <div class="footer">
         <div class="liste1">

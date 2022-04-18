@@ -1,3 +1,33 @@
 h1{
     text-align: center;
 }
+
+table{
+    width: 75%;
+    border: solid black 2px;
+    border-radius: 5px;
+    margin : 25px auto  25px auto;
+}
+
+.Sujet{
+    text-align: center;
+    font-size: 25px;
+    border-style: none none solid none;
+}
+
+.Pseudo{
+    text-align: left;
+    padding-left: 50px;
+}
+
+.Date{
+    text-align: right;
+    padding-right: 50px;
+}
+
+.Message{
+    text-align: left;
+    border-style: dotted none none none;
+    padding: 5px;
+}
+
