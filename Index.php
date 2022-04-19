@@ -57,7 +57,7 @@
                 <h1>Bienvenue</h1>
             </div>
         </div>
-        <form action="" method="post" class="login">
+        <form action="test_connexion.php" method="post" class="login">
             <fieldset> 
                 <input type="text" name="email" placeholder="Adresse mail" required>
                 </br>
@@ -71,36 +71,12 @@
          ?>
          <div id="Titre">
             <div class="Titre">
-                <h1>Bienvenue ^<?php $_SESSION['pseudo'] ?></h1>
+                <h1>Bienvenue <?php $_SESSION['pseudo'] ?></h1>
             </div>
         </div>
-         <?php
+        <?php
          }
-         if(isset($_POST['email']) && isset($_POST['passwd'])){
-			$email = $_POST['email'];
-			$mdp = $_POST['passwd'];
-            
-            //include('Annexes/PHP/connexion.php');
-            include('Annexes/PHP/connexion.php');
-            
-            $requete_email = "SELECT Email WHERE Email = $email";
-            $requete_mdp = "SELECT MotDePasse WHERE Email = $email";
-            $resultat_email = mysqli_query($connexion, $resultat_email);
-            $resultat_mdp = mysqli_query($connexion, $resultat_mdp);
-            
-            if ($resultat_email == 1){
-                echo "Mail valide<br>";
-            }else{
-                echo "Mail pas valide<br>";
-            }
-            if ($resultat_mdp == 1){
-                echo "MdP valide<br>";
-            }else{
-                echo "MdP pas valide<br>";
-            }
-			 
-		}
-         ?>
+        ?>
         <div id="Fixed">
             <div id="image1">
                 <img src="Annexes/Images/chein+maitre.jpg" alt="image d'un chien et de son maitre" />
