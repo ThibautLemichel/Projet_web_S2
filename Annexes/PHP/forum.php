@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <link rel="stylesheet" href="../CSS/ProjetChien.css" />
 <link rel="stylesheet" href="../CSS/forum.css"/>
@@ -57,50 +59,54 @@
     $limite = (int)$limite['Maximum']; 
 
 
-    for ($i = 0; $i< $limite; $i++){ // Affiche tous les forums
-        //$requete = 'SELECT * FROM forum  WHERE Indice = $i';
-        $requete = 'SELECT Sujet FROM forum  WHERE Indice = 1';
-        $resultat = mysqli_query($connexion, $requete);
+    for ($i = 1; $i <= $limite; $i++){ // Affiche tous les forums
+        echo "<div>";
+            echo "<table>";
+                echo "<tbody>";
+                    echo "<tr>";
+                        $requete = "SELECT Sujet FROM forum  WHERE Indice = '{$i}'";
+                        $resultat = mysqli_query($connexion, $requete);
 
-        if ( $resultat == FALSE ){
-        echo "<p>Erreur d'exécution de la requete :".mysqli_error($connexion)."</p>" ;
-        die();
-        }
-
-        $forum = mysqli_fetch_assoc($resultat);
-            echo "<div>";
-                echo "<table>";
-                    echo "<tbody>";
-                        echo "<tr>";
-                            echo "<td colspan='2' class='Sujet'>$forum[Sujet]</td>";
-                        echo "</tr>";
-
-                            $requete = 'SELECT Pseudo, `Date`, `Message` FROM `forum` WHERE Indice = 1 ORDER BY `Date` ASC';
-                            $resultat = mysqli_query($connexion, $requete);
+                        if ( $resultat == FALSE ){
+                        echo "<p>Erreur d'exécution de la requete :".mysqli_error($connexion)."</p>" ;
+                        die();
+                        }
+                        $forum = mysqli_fetch_assoc($resultat);
+                        echo "<td colspan='2' class='Sujet'>$forum[Sujet]</td>";
+                    echo "</tr>";
+                        $requete = "SELECT Pseudo, `Date`, `Message` FROM `forum` WHERE Indice = '{$i}' ORDER BY `Date` ASC";
+                        $resultat = mysqli_query($connexion, $requete);
                     
-                            if ( $resultat == FALSE ){
-                            echo "<p>Erreur d'exécution de la requete :".mysqli_error($connexion)."</p>" ;
-                            die();
-                            }
-                            foreach ($resultat as $forum) {
-                                echo "<tr>";
-                                    echo "<td class='Pseudo' >$forum[Pseudo]</td>";
-                                    echo "<td class='Date'>$forum[Date]</td>";
-                                echo "</tr>";
-                                echo "<tr>";
-                                    echo "<td colspan='2' class='Message'>$forum[Message]</td>";
-                                echo "</tr>";
-                            }
+                        if ( $resultat == FALSE ){
+                        echo "<p>Erreur d'exécution de la requete :".mysqli_error($connexion)."</p>" ;
+                        die();
+                        }
+                        foreach ($resultat as $forum) {
+                            echo "<tr>";
+                                echo "<td class='Pseudo' >$forum[Pseudo]</td>";
+                                echo "<td class='Date'>$forum[Date]</td>";
+                            echo "</tr>";
+                            echo "<tr>";
+                                echo "<td colspan='2' class='Message'>$forum[Message]</td>";
+                            echo "</tr>";
+                        }
+                        if (isset($_SESSION['Pseudo'])){
                             echo "<tr>";
                                 echo "<td colspan='2'><textarea></textarea></td>";
                             echo "</tr>";
                             echo "<tr>";
                                 echo "<td colspan='2'><button>Envoyer</button></td>";
                             echo "</tr>";
-                            
-                    echo "</tbody>";
-                echo "</table>";
-            echo "</div>";
+                        }else{
+                            echo "<tr>";
+                                echo "<td colspan='2' style=text-align:center>Connectez-vous pour pouvoir ajouter une message.</td>";
+                            echo "</tr>";
+                        }
+
+
+                echo "</tbody>";
+            echo "</table>";
+        echo "</div>";
     }
     ?>
 
