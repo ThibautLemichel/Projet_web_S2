@@ -50,7 +50,7 @@
 
     <div id="main">
         <?php
-        if (!isset($_SESSION['login'])){
+        if (!isset($_SESSION['Pseudo'])){
         ?>
         <div id="Titre">
             <div class="Titre">
@@ -71,7 +71,7 @@
          ?>
          <div id="Titre">
             <div class="Titre">
-                <h1>Bienvenue <?php $_SESSION['pseudo'] ?></h1>
+                <?php echo "<h1>Bienvenue $_SESSION[Pseudo]</h1>" ?>
             </div>
         </div>
         <?php
