@@ -38,6 +38,7 @@ table{
 textarea{
     resize: none;
     display: block;
+    margin-top : 5px;
     margin-left: auto;
     margin-right: auto;
     width: 75%;
@@ -45,8 +46,8 @@ textarea{
 }
 
 input{
-    resize: none;
     display: block;
+    margin-top : 15px;
     margin-left: auto;
     margin-right: auto;
     width: 30%;
@@ -64,5 +65,8 @@ button{
 }
 
 .ajout_sujet{
-
+    width: 75%;
+    border: solid black 2px;
+    border-radius: 5px;
+    margin : 25px auto  25px auto;
 }

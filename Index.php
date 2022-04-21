@@ -17,7 +17,7 @@
 
 <body>
     <div id="header">
-        <img id="logo" src="Annexes/Images/LogoChien1.jpg" alt="Notre super logo" />
+            <img id="logo" src="Annexes/Images/LogoChien1.jpg" alt="Notre super logo" />
         <p><a href="Annexes/HTML/index.html">Les toutous</a></p>
         <nav> <!--Ici commence le menu en haut de la page-->
             <ul>

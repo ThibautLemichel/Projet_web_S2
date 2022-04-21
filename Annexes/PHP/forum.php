@@ -93,7 +93,7 @@
                         if (isset($_SESSION['Pseudo'])){
                             echo "<tr>";
                                 echo "<form action='ajout_message.php' method='POST'>";
-                                echo "<td colspan='2'><textarea name='message' placeholder='Votre message'></textarea></td>";
+                                echo "<td colspan='2'><textarea name='message' placeholder='Votre message...'></textarea></td>";
                                 echo "<input type='hidden' name='indice' value='$i'>";
                                 echo "<input type='hidden' name='sujet' value='$forum[Sujet]'>";
 
@@ -113,15 +113,24 @@
             echo "</table>";
         echo "</div>";
     }
-    echo "<div class='ajout_sujet'>";
-        echo "<form method='POST' action='ajout_sujet.php'>";
-            echo "<h3>Vous voulez créer un nouveau sujet ?</h3>";
-            echo "<input type='hidden' name='indice' value='($i)'>";
-            echo "<input type='text' placeholder='Nom du sujet' name='sujet'></input>";
-            echo "<td colspan='2'><textarea name='message' placeholder='Votre message'></textarea></td>";
-            echo "<td colspan='2'><button>Envoyer</button></td>";
-        echo "</form>";
-    echo "</div>";
+    if (isset($_SESSION['Pseudo'])){
+        echo "<div class='ajout_sujet'>";
+            echo "<form method='POST' action='ajout_sujet.php'>";
+                echo "<h3>Vous voulez créer un nouveau sujet ?</h3>";
+                echo "<p></p>";
+                echo "<input type='hidden' name='indice' value='($i)'>";
+                echo "<input type='text' placeholder='Nom du sujet...' name='sujet'></input>";
+                echo "<td colspan='2'><textarea name='message' placeholder='Votre message'></textarea></td>";
+                echo "<td colspan='2'><button>Envoyer</button></td>";
+            echo "</form>";
+        echo "</div>";
+    }else{
+        echo "<div class='ajout_sujet'>";
+            echo "<h4 style=text-align:center>Connectez-vous pour pouvoir créer un sujet.</h4>";
+        echo "</div>";
+    }  
+
+    if (isset($_S))
     ?>
 
     <div class="footer">
