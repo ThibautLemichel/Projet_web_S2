@@ -46,8 +46,7 @@
     
     <?php
     include("connexion.php");
-    /* A retravailler */
-                
+                    
     $requete_limite = 'SELECT MAX(Indice) AS Maximum FROM forum';
 	$resultat_limite = mysqli_query($connexion, $requete_limite);
                 
@@ -129,8 +128,6 @@
             echo "<h4 style=text-align:center>Connectez-vous pour pouvoir créer un sujet.</h4>";
         echo "</div>";
     }  
-
-    if (isset($_S))
     ?>
 
     <div class="footer">

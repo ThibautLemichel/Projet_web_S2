@@ -110,6 +110,21 @@ input[type=text]{
     box-shadow: 0px 10px 14px -7px black;
 }
 
+.deconnexion{
+    border: solid black 2px;
+    border-radius: 5px;
+    display: grid;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+.deconnexion:hover{
+    color : saddlebrown ;
+    background-color: whitesmoke;
+}
+
 @media only screen and (min-width : 768px) {
     .Titre {
         width: 100%;

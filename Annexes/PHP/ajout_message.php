@@ -22,13 +22,6 @@ if(!isset($_POST['message'])){
     $requete = "INSERT INTO forum (Indice, Sujet,  Pseudo, `Message`, `Date`) VALUES ($indice, '$sujet', '$pseudo', '$message', '$date')";
     $resultat = mysqli_query($connexion,$requete);
     
-    if ($resultat == FALSE){
-        echo "<p>Erreur d'exécution de la requete :".mysqli_error($connexion)."</p>" ;
-    }
-    else{
-        echo "OK";
-    }
-    
     if ( $resultat == FALSE ){
         echo "<p>Erreur d'exécution de la requete :".mysqli_error($connexion)."</p>" ;
         die();

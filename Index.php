@@ -57,7 +57,7 @@
                 <h1>Bienvenue</h1>
             </div>
         </div>
-        <form action="test_connexion.php" method="post" class="login">
+        <form action="Annexes/PHP/test_connexion.php" method="post" class="login">
             <fieldset> 
                 <input type="text" name="email" placeholder="Adresse mail" required>
                 </br>
@@ -68,6 +68,7 @@
         </form>
         <?php
          }else{
+            echo "<a href='Annexes/PHP/deconnexion.php' class='deconnexion'>Déconnexion</a>";
          ?>
          <div id="Titre">
             <div class="Titre">

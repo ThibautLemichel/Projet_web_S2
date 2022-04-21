@@ -21,6 +21,6 @@ else{
 
     $_SESSION['Pseudo'] = $user['Pseudo'];
     $_SESSION['Admin'] = $user['Admin'];
-    header("Location:Index.php");
+    header("Location:../../Index.php");
 }
 ?>
