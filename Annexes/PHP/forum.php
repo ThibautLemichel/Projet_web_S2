@@ -11,7 +11,7 @@
     <meta name="keywords" content="chien, toutou, animaux de compagnies, meilleur ami de l'homme, meilleur ami de la femme" />
     <meta name="author" content="Thibaut Lemichel" />
 </head>
-    <body>
+<body>
     <div id="header">
         <img id="logo" src="../Images/LogoChien1.jpg" alt="Notre super logo" />
         <p><a href="../../Index.php">Les toutous</a></p>
@@ -74,7 +74,7 @@
                         $forum = mysqli_fetch_assoc($resultat);
                         echo "<td colspan='2' class='Sujet'>$forum[Sujet]</td>";
                     echo "</tr>";
-                        $requete = "SELECT Pseudo, `Date`, `Message` FROM `forum` WHERE Indice = '{$i}' ORDER BY `Date` ASC";
+                        $requete = "SELECT Sujet, Pseudo, `Date`, `Message` FROM `forum` WHERE Indice = '{$i}' ORDER BY `Date` ASC";
                         $resultat = mysqli_query($connexion, $requete);
                     
                         if ( $resultat == FALSE ){
@@ -92,10 +92,15 @@
                         }
                         if (isset($_SESSION['Pseudo'])){
                             echo "<tr>";
-                                echo "<td colspan='2'><textarea></textarea></td>";
+                                echo "<form action='ajout_message.php' method='POST'>";
+                                echo "<td colspan='2'><textarea name='message' placeholder='Votre message'></textarea></td>";
+                                echo "<input type='hidden' name='indice' value='$i'>";
+                                echo "<input type='hidden' name='sujet' value='$forum[Sujet]'>";
+
                             echo "</tr>";
                             echo "<tr>";
                                 echo "<td colspan='2'><button>Envoyer</button></td>";
+                                echo "</form>";
                             echo "</tr>";
                         }else{
                             echo "<tr>";
@@ -108,6 +113,15 @@
             echo "</table>";
         echo "</div>";
     }
+    echo "<div class='ajout_sujet'>";
+        echo "<form method='POST' action='ajout_sujet.php'>";
+            echo "<h3>Vous voulez créer un nouveau sujet ?</h3>";
+            echo "<input type='hidden' name='indice' value='($i)'>";
+            echo "<input type='text' placeholder='Nom du sujet' name='sujet'></input>";
+            echo "<td colspan='2'><textarea name='message' placeholder='Votre message'></textarea></td>";
+            echo "<td colspan='2'><button>Envoyer</button></td>";
+        echo "</form>";
+    echo "</div>";
     ?>
 
     <div class="footer">
@@ -145,5 +159,5 @@
             <a href="https://fr-fr.facebook.com/"><img src="../Images/facebook.png" alt="icone facebook" /></a>
         </div>
     </div>
-    </body>
+</body>
 </HTML>
