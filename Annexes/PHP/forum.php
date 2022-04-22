@@ -71,6 +71,11 @@
                         die();
                         }
                         $forum = mysqli_fetch_assoc($resultat);
+                        if (isset($_SESSION['Admin']) && $_SESSION['Admin'] == 1){
+                            echo "<tr>";
+                                echo "<td colspan='2' class='supprimer'><a href='supprimer_sujet.php?Sujet=$forum[Sujet]'>Supprimer le sujet</a></td>";
+                            echo "</tr>";
+                        }
                         echo "<td colspan='2' class='Sujet'>$forum[Sujet]</td>";
                     echo "</tr>";
                         $requete = "SELECT Sujet, Pseudo, `Date`, `Message` FROM `forum` WHERE Indice = '{$i}' ORDER BY `Date` ASC";
@@ -82,6 +87,11 @@
                         }
                         foreach ($resultat as $forum) {
                             echo "<tr>";
+                            if (isset($_SESSION['Admin']) && $_SESSION['Admin'] == 1){
+                                echo "<tr>";
+                                    echo "<td colspan='2' class='supprimer'><a href='supprimer_message.php?Message=$forum[Message]'>Supprimer le message</a></td>";
+                                echo "</tr>";
+                            }
                                 echo "<td class='Pseudo' >$forum[Pseudo]</td>";
                                 echo "<td class='Date'>$forum[Date]</td>";
                             echo "</tr>";

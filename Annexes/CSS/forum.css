@@ -16,6 +16,7 @@ table{
 .Sujet{
     text-align: center;
     font-size: 25px;
+    padding-bottom: 25px;
 }
 
 .Pseudo{
@@ -69,4 +70,12 @@ button{
     border: solid black 2px;
     border-radius: 5px;
     margin : 25px auto  25px auto;
+}
+
+.supprimer>a{
+    outline: none;
+    text-decoration: none;
+    color: red;
+    display: block;
+    text-align: center;
 }
