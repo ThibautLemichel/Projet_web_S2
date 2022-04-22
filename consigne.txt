@@ -23,16 +23,11 @@ Soumission :
 Nom1_Nom2_Nom3
 • Date limite : Dimanche 07/05/2022 à 23h59
 --------------------------------------------------------------------------------------------------------------
-3 pages :
-- connexion
-- forum (affiche les informations de la BD)
-- page vérifie les informations
-
-Cookie
-- Nom
-- email
-- carte bancaire
-
-Factorisation de code :
-- include('connexion.php')
+Ceux qui nous manque :
+- Une page de PHP
+- Utilisation de COOKIES
+- Un système de création de profil (pseudo, email, mot de passe) [Enzo va le faire]
+- Un système de suppression de données (les admins peuvent supprimer les messages isssus des forums) [Enzo va le faire]
+- Le code doit être entièrement factorisé
+- La mise en page d'un rappport
 
