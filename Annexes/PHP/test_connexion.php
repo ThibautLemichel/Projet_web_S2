@@ -4,7 +4,7 @@ include("connexion.php");
 
 if (!isset($_POST['email']) || !isset($_POST['passwd'])){
     echo "Information manquante";
-    header("Location:index.php");
+    header("Location:../../index.php");
 }
 else{
     $email = $_POST['email'];
@@ -22,5 +22,6 @@ else{
     $_SESSION['Pseudo'] = $user['Pseudo'];
     $_SESSION['Admin'] = $user['Admin'];
     header("Location:../../Index.php");
+    mysqli_close($connexion);
 }
 ?>

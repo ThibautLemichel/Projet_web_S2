@@ -112,12 +112,14 @@ input[type=text]{
 
 .deconnexion{
     border: solid black 2px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
     border-radius: 5px;
     color: black;
     text-decoration: none;
     display:block;
-    width:200px;
-    margin:0 auto;
+    font-style: italic;
 }
 
 .deconnexion:hover{
@@ -126,7 +128,23 @@ input[type=text]{
 }
 
 .creation_compte{
-    background-color: blue;
+    display: block;
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.creation_compte>a{
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+}
+
+.creation_compte>a:hover{
+    color : saddlebrown ;
+    background-color: whitesmoke;
 }
 
 @media only screen and (min-width : 768px) {
