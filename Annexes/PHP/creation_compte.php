@@ -28,6 +28,14 @@ if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['email']) &&
         }
     }
 
+    function verificationTexte($chaine){
+        if (!mb_eregi('^[[:alnum:]]*$', $chaine)){
+            return True;
+        }else{
+            return False;
+        }
+    }
+
     echo "$nom<br>";
     echo "$prenom<br>";
     echo "$email<br>";
@@ -35,8 +43,12 @@ if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['email']) &&
     echo "$mdp<br>";
     echo "$admin<br>";
     echo "<br>";
+    echo verificationTexte($nom);
+    echo verificationTexte($prenom).'<br>';
     echo verificationEmail($email).'<br>';
+    echo verificationTexte($pseudo).'<br>';
     echo verificationMotDePasse($mdp).'<br>';
+
 
     
     if (!verificationEmail($email) || !verificationMotDePasse($mdp)){
@@ -86,17 +98,15 @@ if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['email']) &&
             $requete = "SELECT Pseudo, `Admin` FROM utilisateurs WHERE Email = '$email' && MotDePasse = '$mdp'";
             $resultat = mysqli_query($connexion, $requete);
 
-            if ( $resultat == FALSE ){
-                echo "<p>Erreur d'exécution de la requete :".mysqli_error($connexion)."</p>" ;
-                header("Location:Index.php");
-            }
-            $user = mysqli_fetch_assoc($resultat);
+            if ( $resultat != FALSE ){
+                $user = mysqli_fetch_assoc($resultat);
 
-            $_SESSION['Pseudo'] = $user['Pseudo'];
-            $_SESSION['Admin'] = $user['Admin'];
+                $_SESSION['Pseudo'] = $user['Pseudo'];
+                $_SESSION['Admin'] = $user['Admin'];
             
-            mysqli_close($connexion);
-            header("Location:../../Index.php");
+                mysqli_close($connexion);
+                header("Location:../../Index.php");
+            }
         }
     }
     
@@ -109,19 +119,29 @@ if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['email']) &&
     <h3>Inscription</h3>
     <fieldset>
         <label>Nom</label><br>
-        <input type="text" name='nom'>
+        <input type="text" name='nom' required>
         <br><br>
         <label>Prénom</label><br>
-        <input type="text" name='prenom'>
+        <input type="text" name='prenom' required>
         <br><br>
         <label>Adresse email</label><br>
-        <input type="text" name='email'>
+        <?php
+            if (isset($email) && !verificationMotDePasse($email)){
+                echo "Adresse mail non valide (xxxxx.xxxxx@xxxxx.xxx)<br>";
+            }
+        ?>
+        <input type="text" name='email' required>
         <br><br>
         <label>Pseudo</label><br>
-        <input type="text" name='pseudo'>
+        <input type="text" name='pseudo' required>
         <br><br>
         <label>Mot de passe</label><br>
-        <input type="text" name='mdp'>
+        <?php
+            if (isset($mdp) && !verificationMotDePasse($mdp)){
+                echo "Mot de passe non valide (8 caractères, majuscules, minuscules et chiffres)<br>";
+            }
+        ?>
+        <input type="text" name='mdp' required>
         <br><br>
         <label>Voulez-vous être administrateur ?</label><br>
         <input type="checkbox" name='admin'>

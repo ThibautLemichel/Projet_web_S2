@@ -78,7 +78,7 @@
                         }
                         echo "<td colspan='2' class='Sujet'>$forum[Sujet]</td>";
                     echo "</tr>";
-                        $requete = "SELECT Sujet, Pseudo, `Date`, `Message` FROM `forum` WHERE Indice = '{$i}' ORDER BY `Date` DESC";
+                        $requete = "SELECT Sujet, Pseudo, `Date`, `Message` FROM `forum` WHERE Indice = '{$i}' ORDER BY `Date` ASC";
                         $resultat = mysqli_query($connexion, $requete);
                     
                         if ( $resultat == FALSE ){
