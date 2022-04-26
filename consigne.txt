@@ -26,7 +26,6 @@ Nom1_Nom2_Nom3
 Ceux qui nous manque :
 - Une page de PHP
 - Utilisation de COOKIES
-- Un système de création de profil (pseudo, email, mot de passe) [Enzo va le faire]
 - Le code doit être entièrement factorisé
 - La mise en page d'un rappport
 
