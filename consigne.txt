@@ -24,8 +24,7 @@ Nom1_Nom2_Nom3
 • Date limite : Dimanche 07/05/2022 à 23h59
 --------------------------------------------------------------------------------------------------------------
 Ceux qui nous manque :
-- Une page de PHP
-- Utilisation de COOKIES
-- Le code doit être entièrement factorisé
+- Pouvoir mettre à jour des valeurs dans la base de donnée
+- Travailler le CSS
 - La mise en page d'un rappport
 
