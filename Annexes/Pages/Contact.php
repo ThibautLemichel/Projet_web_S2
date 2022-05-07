@@ -31,8 +31,8 @@
                 }
                 ?>
                 <h3>Message</h3>
-                <input type="text" class="form" placeholder="Votre Nom" value= "<?php echo $nom; ?>"/>
-                <input type="text" class="form" placeholder="Votre Prénom" value= "<?php echo $prenom; ?>"/>
+                <input type="text" class="form" placeholder="Votre nom" value= "<?php echo $nom; ?>"/>
+                <input type="text" class="form" placeholder="Votre prénom" value= "<?php echo $prenom; ?>"/>
                 <input type="text" class="form" placeholder="Votre E-mail" value= "<?php echo $email; ?>"/>
                 <textarea placeholder="Ecrivez votre message ici" class="form"></textarea>
                 <input type="submit" class="form" value="Envoyer" />
