@@ -81,6 +81,7 @@ session_start();
             </div>
         </div>
     </div>
+    <a href="Annexes/Pages/informations.php">Information à modifier</a>
     <?php include("Annexes/PHP/footer_index.php"); ?>
 </body>
 
