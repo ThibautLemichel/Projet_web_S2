@@ -113,18 +113,21 @@ if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['email']) &&
 }
 
 ?>
-<link rel="stylesheet" href="../CSS/creation_compte.css">
-
-<form action="" method="POST">
+<head>
+    <title>Inscription</title>
+    <link rel="stylesheet" href="../CSS/creation_compte2.css">
+    <!--<link rel="stylesheet" href="../CSS/creation_compte.css">-->
+</head>
+<body>
+    <form action="" method="POST" id="form">
     <h3>Inscription</h3>
-    <fieldset>
-        <label>Nom</label><br>
+        <label>Nom :</label><br>
         <input type="text" name='nom' required>
         <br><br>
-        <label>Prénom</label><br>
+        <label>Prénom :</label><br>
         <input type="text" name='prenom' required>
         <br><br>
-        <label>Adresse email</label><br>
+        <label>Adresse email :</label><br>
         <?php
             if (isset($email) && !verificationMotDePasse($email)){
                 echo "Adresse mail non valide (xxxxx.xxxxx@xxxxx.xxx)<br>";
@@ -132,10 +135,10 @@ if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['email']) &&
         ?>
         <input type="text" name='email' required>
         <br><br>
-        <label>Pseudo</label><br>
+        <label>Pseudo :</label><br>
         <input type="text" name='pseudo' required>
         <br><br>
-        <label>Mot de passe</label><br>
+        <label>Mot de passe :   </label><br>
         <?php
             if (isset($mdp) && !verificationMotDePasse($mdp)){
                 echo "Mot de passe non valide (8 caractères, majuscules, minuscules et chiffres)<br>";
@@ -148,5 +151,5 @@ if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['email']) &&
         <br><br>
         <br>
         <button>Envoyer</button>
-    </fieldset>
-</form>
+    </form>
+</body>
