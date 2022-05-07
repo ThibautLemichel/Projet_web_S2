@@ -103,7 +103,10 @@ if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['email']) &&
 
                 $_SESSION['Pseudo'] = $user['Pseudo'];
                 $_SESSION['Admin'] = $user['Admin'];
-            
+                setcookie("Nom", $nom, time() + (365*24*3600));
+                setcookie("Prenom", $prenom, time() + (365*24*3600));
+                setcookie("Email", $email, time() + (365*24*3600));
+                
                 mysqli_close($connexion);
                 header("Location:../../Index.php");
             }
