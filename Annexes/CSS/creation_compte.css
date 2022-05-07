@@ -1,10 +1,12 @@
-form{
+body{
     text-align: center;
     padding: 25px;
+    background-color : floralwhite;
 }
 
 h3{
     font-size:30px;
+    color: saddlebrown;
 }
 
 input[type=text]{
