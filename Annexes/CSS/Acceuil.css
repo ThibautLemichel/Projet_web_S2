@@ -149,8 +149,7 @@ input[type=text]{
 
 /* Début popup connexion */
 .popup {
-    background-color : red;
-    /*height: 100vh;*/
+    background-color : floralwhite;
     overflow: hidden;
     text-align: center;
   }
@@ -166,12 +165,12 @@ input[type=text]{
   .button {
     font-size: 1.3rem;
     padding: 1rem;
-    color: #fff;
+    color: saddlebrown;
     border: 2px solid saddlebrown;
     border-radius: 20px/50px;
     text-decoration: none;
     cursor: pointer;
-    background: rgba(10,149,147,0.25);
+    background: rgba(255,255,255,0.25);
     transition: all 0.3s ease-out;
   }
   .button:hover {
