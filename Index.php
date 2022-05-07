@@ -26,15 +26,26 @@
                 <h1>Bienvenue</h1>
             </div>
         </div>
-        <form action="Annexes/PHP/test_connexion.php" method="post" class="login">
-            <fieldset> 
-                <input type="text" name="email" placeholder="Adresse mail" required>
-                </br>
-                <input type="text" name="passwd"  placeholder="Mot de passe" required>
-                </br>
-                <input type="submit" name="Envoyer" value="Connecter" class="bouton_login"/>
-            </fieldset>
-        </form>
+        <div class=popup>
+            <div class="box">
+                <a href="#popup1" class="button">Se connecter</a>
+            </div>
+            <div id="popup1" class="popupp">
+                <div class="popup1">
+                    <h2>Se connecter</h2>
+                    <a href="#" class="cross">&times;</a>
+                    <form action="Annexes/PHP/test_connexion.php" method="post" class="login">
+                        <fieldset> 
+                        <input type="text" name="email" placeholder="Adresse mail" required>
+                        </br>
+                        <input type="text" name="passwd"  placeholder="Mot de passe" required>
+                        </br>
+                        <input type="submit" name="Envoyer" value="Connecter" class="bouton_login"/>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
         <div class="creation_compte">
             <h3>Vous n'avez pas de compte ?</h3>
             <a href='Annexes/PHP/creation_compte.php'>Créer un compte</a>
