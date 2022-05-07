@@ -25,6 +25,6 @@ Nom1_Nom2_Nom3
 --------------------------------------------------------------------------------------------------------------
 Ceux qui nous manque :
 - Pouvoir mettre à jour des valeurs dans la base de donnée
-- Travailler le CSS
+- Travailler le CSS (forum)
 - La mise en page d'un rappport
 

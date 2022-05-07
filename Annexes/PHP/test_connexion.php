@@ -25,8 +25,7 @@ else{
     setcookie('Prenom', $user['Prenom'], time() + (365*24*3600));
     setcookie('Nom', $user['Nom'], time() + (365*24*3600));
     setcookie('Email', $user['Email'], time() + (365*24*3600));
-
-    #header("Location:../../Index.php");
+    header("Location:../../Index.php");
     mysqli_close($connexion);
 }
 ?>
