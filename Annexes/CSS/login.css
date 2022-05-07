@@ -3,11 +3,13 @@
     background-color: floralwhite;
     overflow: hidden;
     text-align: center;
+    width: 100%;
 }
 
 .box {
     width: 320px;
-    margin: 10rem auto;
+    margin-left: 30%;
+    margin-bottom : 10px;
     padding-top: 10rem;
     background: rgba(255,255,255,0.3);
     padding: 2.5rem;
@@ -52,11 +54,15 @@
 .popup1 {
     margin: 6rem auto;
     padding: 2rem;
-    background: #fff;
+    background: floralwhite;
     border-radius: 5px;
     width: 45%;
     position: relative;
     transition: all 0.4s ease-in-out;
+}
+
+.popup1 h2 {
+    color : saddlebrown;
 }
 
     .popup1 .cross {
@@ -88,11 +94,21 @@ input[type=text] {
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid black;
+    border-radius : 10px/10px;
 }
 
 .bouton_login {
+    margin-top : 20px;
     width: 25%;
     padding: 5px;
     border-radius: 8px;
-    box-shadow: 0px 10px 14px -7px black;
+    box-shadow: 0px 10px 14px -7px saddlebrown;
+    cursor: pointer;
+    border-color : saddlebrown;
+    color: saddlebrown;
+}
+
+.bouton_login:hover{
+    color: floralwhite;
+    background-color: saddlebrown;
 }
