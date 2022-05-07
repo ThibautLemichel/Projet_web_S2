@@ -1,14 +1,15 @@
-/* D�but popup connexion */
+/* Début popup connexion */
 .popup {
     background-color: floralwhite;
     overflow: hidden;
     text-align: center;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .box {
     width: 320px;
-    margin-left: 30%;
+    margin-left: 32%;
     margin-bottom : 10px;
     padding-top: 10rem;
     background: rgba(255,255,255,0.3);
@@ -81,6 +82,7 @@
         }
 /* Fin popup connexion */
 
+/* Début formulaire de connexion et bouton de création de compte */
 .login {
     text-align: center;
     padding: 25px;
@@ -112,3 +114,21 @@ input[type=text] {
     color: floralwhite;
     background-color: saddlebrown;
 }
+
+#button_creation_compte{
+    margin-top : 20px;
+    width: 25%;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 14px -7px saddlebrown;
+    cursor: pointer;
+    border-color : saddlebrown;
+    color: saddlebrown;
+}
+
+#button_creation_compte:hover{
+    color: floralwhite;
+    background-color: saddlebrown;
+}
+
+/* Fin formulaire de connexion et bouton de création de compte */

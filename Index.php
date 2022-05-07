@@ -43,15 +43,17 @@ session_start();
                                 <input type="text" name="passwd" placeholder="Mot de passe" required>
                                 </br>
                                 <input type="submit" name="Envoyer" value="Connecter" class="bouton_login" />
+                                
                             </fieldset>
                         </form>
+                        <a href='Annexes/PHP/creation_compte.php'><button id="button_creation_compte">Créer un compte</button></a>
                     </div>
                 </div>
             </div>
-            <div class="creation_compte">
+            <!--<div class="creation_compte">
                 <h3>Vous n'avez pas de compte ?</h3>
                 <a href='Annexes/PHP/creation_compte.php'>Créer un compte</a>
-            </div>
+            </div>-->
         <?php
         } else {
             echo "<a href='Annexes/PHP/deconnexion.php' class='deconnexion'>Déconnexion</a>";
