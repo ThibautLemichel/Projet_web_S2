@@ -1,12 +1,14 @@
 <?php
-    session_start();
+session_start();
 ?>
 
 
 <!DOCTYPE html>
-<link rel="stylesheet" href="Annexes/CSS/ProjetChien.css"/>
-<link rel="stylesheet" href="Annexes/CSS/Acceuil.css"/>
+<link rel="stylesheet" href="Annexes/CSS/ProjetChien.css" />
+<link rel="stylesheet" href="Annexes/CSS/Acceuil.css" />
+<link rel="stylesheet" href="Annexes/CSS/login.css" />
 <html lang="fr-fr">
+
 <head>
     <meta charset="utf-8" />
     <title>Projet chien</title>
@@ -19,48 +21,48 @@
     <?php include('Annexes/PHP/header_index.php'); ?>
     <div id="main">
         <?php
-        if (!isset($_SESSION['Pseudo'])){
+        if (!isset($_SESSION['Pseudo'])) {
         ?>
-        <div id="Titre">
-            <div class="Titre">
-                <h1>Bienvenue</h1>
-            </div>
-        </div>
-        <div class=popup>
-            <div class="box">
-                <a href="#popup1" class="button">Se connecter</a>
-            </div>
-            <div id="popup1" class="popupp">
-                <div class="popup1">
-                    <h2>Se connecter</h2>
-                    <a href="#" class="cross">&times;</a>
-                    <form action="Annexes/PHP/test_connexion.php" method="post" class="login">
-                        <fieldset> 
-                        <input type="text" name="email" placeholder="Adresse mail" required>
-                        </br>
-                        <input type="text" name="passwd"  placeholder="Mot de passe" required>
-                        </br>
-                        <input type="submit" name="Envoyer" value="Connecter" class="bouton_login"/>
-                        </fieldset>
-                    </form>
+            <div id="Titre">
+                <div class="Titre">
+                    <h1>Bienvenue</h1>
                 </div>
             </div>
-        </div>
-        <div class="creation_compte">
-            <h3>Vous n'avez pas de compte ?</h3>
-            <a href='Annexes/PHP/creation_compte.php'>Créer un compte</a>
-        </div>
-        <?php
-         }else{
-            echo "<a href='Annexes/PHP/deconnexion.php' class='deconnexion'>Déconnexion</a>";
-         ?>
-         <div id="Titre">
-            <div class="Titre">
-                <?php echo "<h1>Bienvenue $_SESSION[Pseudo]</h1>" ?>
+            <div class=popup>
+                <div class="box">
+                    <a href="#popup1" class="button">Se connecter</a>
+                </div>
+                <div id="popup1" class="popupp">
+                    <div class="popup1">
+                        <h2>Se connecter</h2>
+                        <a href="#" class="cross">&times;</a>
+                        <form action="Annexes/PHP/test_connexion.php" method="post" class="login">
+                            <fieldset>
+                                <input type="text" name="email" placeholder="Adresse mail" required>
+                                </br>
+                                <input type="text" name="passwd" placeholder="Mot de passe" required>
+                                </br>
+                                <input type="submit" name="Envoyer" value="Connecter" class="bouton_login" />
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="creation_compte">
+                <h3>Vous n'avez pas de compte ?</h3>
+                <a href='Annexes/PHP/creation_compte.php'>Créer un compte</a>
+            </div>
         <?php
-         }
+        } else {
+            echo "<a href='Annexes/PHP/deconnexion.php' class='deconnexion'>Déconnexion</a>";
+        ?>
+            <div id="Titre">
+                <div class="Titre">
+                    <?php echo "<h1>Bienvenue $_SESSION[Pseudo]</h1>" ?>
+                </div>
+            </div>
+        <?php
+        }
         ?>
         <div id="Fixed">
             <div id="image1">

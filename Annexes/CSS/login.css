@@ -1,0 +1,98 @@
+/* D�but popup connexion */
+.popup {
+    background-color: floralwhite;
+    overflow: hidden;
+    text-align: center;
+}
+
+.box {
+    width: 320px;
+    margin: 10rem auto;
+    padding-top: 10rem;
+    background: rgba(255,255,255,0.3);
+    padding: 2.5rem;
+    border: 2px solid saddlebrown;
+    border-radius: 20px/50px;
+}
+
+.button {
+    font-size: 1.3rem;
+    padding: 1rem;
+    color: saddlebrown;
+    border: 2px solid saddlebrown;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    background: rgba(255,255,255,0.25);
+    transition: all 0.3s ease-out;
+}
+
+    .button:hover {
+        background: saddlebrown;
+        color: floralwhite;
+    }
+
+.popupp {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    transition: opacity .4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+    .popupp:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+.popup1 {
+    margin: 6rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 5px;
+    width: 45%;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+    .popup1 .cross {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        text-decoration: none;
+        transition: 0.3s ease;
+        color: black;
+    }
+
+        .popup1 .cross:hover {
+            color: saddlebrown;
+        }
+/* Fin popup connexion */
+
+.login {
+    text-align: center;
+    padding: 25px;
+}
+
+input[type=text] {
+    width: 50%;
+    background-color: whitesmoke;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.bouton_login {
+    width: 25%;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 14px -7px black;
+}
