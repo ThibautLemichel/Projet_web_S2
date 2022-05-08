@@ -52,8 +52,7 @@
                 <a href='Annexes/PHP/creation_compte.php'>Créer un compte</a>
             </div>-->
         <?php
-        } else {
-            echo "<a href='Annexes/PHP/deconnexion.php' class='deconnexion'>Déconnexion</a>";
+        }
         ?>
             <div id="Titre">
                 <div class="Titre">
