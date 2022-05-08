@@ -35,7 +35,7 @@
             </div>
             <?php
         } else {
-            echo "<a href='Annexes/PHP/deconnexion.php' ><button id='button_deconnexion'>Déconnexion</button></a>";}
+            echo "<a href='Annexes/PHP/deconnexion.php' class='deconnexion1'><button id='button_deconnexion'>Déconnexion</button></a>";}
         ?>
         </div>
         <nav> <!--Ici commence le menu en haut de la page-->

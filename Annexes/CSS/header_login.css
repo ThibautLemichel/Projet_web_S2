@@ -160,7 +160,7 @@ input[type=text] {
     cursor: pointer;
     border-color : saddlebrown;
     color: saddlebrown;
-    margin-left: 30px;
+    margin-left: 10px;
     transition: all 0.3s ease-out;
     background-color: floralwhite;
     font-size: 1.3rem;
@@ -170,6 +170,10 @@ input[type=text] {
 #button_deconnexion:hover{
     color: floralwhite;
     background-color: saddlebrown;
+}
+
+.deconnexion1{
+    margin-left: 10px;
 }
 /* Fin formulaire de connexion et bouton de création de compte */
 
