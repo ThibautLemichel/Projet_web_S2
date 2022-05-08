@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="../CSS/Header.css" />
-<link rel="stylesheet" href="../CSS/forum.css"/>
+<link rel="stylesheet" href="../CSS/forum2.css"/>
 <link rel="stylesheet" href="../CSS/header_login.css" />
 <html lang="fr-fr">
 <head>
@@ -29,7 +29,7 @@
 
 
     for ($i = 1; $i <= $limite; $i++){ // Affiche tous les forums
-        echo "<div>";
+        echo "<div class='premiere_div'>";
             echo "<table>";
                 echo "<tbody>";
                     echo "<tr>";
