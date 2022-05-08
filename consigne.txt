@@ -21,10 +21,8 @@ PHP dans votre site.
 Soumission :
 • Soumission : Dossier compressé, contenant votre site web et le rapport, nommé
 Nom1_Nom2_Nom3
-• Date limite : Dimanche 07/05/2022 à 23h59
+• Date limite : Dimanche 08/05/2022 à 23h59
 --------------------------------------------------------------------------------------------------------------
 Ceux qui nous manque :
 - Pouvoir mettre à jour des valeurs dans la base de donnée
 - Travailler le CSS (forum)
-- La mise en page d'un rappport
-

@@ -16,7 +16,7 @@ function verificationMotDePasse($chaine){
 }
 
 if (!isset($_POST['nom']) || !isset($_POST['prenom']) || !isset($_POST['email']) || !isset($_POST['mdp'])){
-    #header('Location: ../Pages/informations.php');
+    header('Location: ../Pages/informations.php');
 }
 
 $prenom = $_POST['prenom'];
@@ -26,11 +26,12 @@ $pseudo = $_POST['pseudo'];
 $email = $_COOKIE['email'];
 
 if (!verificationEmail($email) || !verificationMotDePasse($mdp)){
-    #header('Location: ../Pages/informations.php');
+    header('Location: ../Pages/informations.php');
 }
 
 $requete = "UPDATE `utilisateurs` SET `Nom`= '{$nom}',`Prenom`= '{$prenom}',`Pseudo`= '{$pseudo}',`MotDePasse`= '{$mdp}' WHERE `Email` = '{$email}'";
 $resultat = mysqli_query($connexion, $requete);
 
+header('Location: ../Pages/informations.php');
 
 ?>
