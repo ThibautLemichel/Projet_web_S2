@@ -1,5 +1,3 @@
-<?php session_start(); ?>
-
 <!DOCTYPE html>
 <link rel="stylesheet" href="../CSS/ProjetChien.css" />
 <link rel="stylesheet" href="../CSS/forum.css"/>
