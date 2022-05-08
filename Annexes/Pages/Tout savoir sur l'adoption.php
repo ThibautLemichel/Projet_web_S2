@@ -7,7 +7,8 @@
     <meta name="description" content="Trouve le chien de tes rêves" />
     <meta name="keywords" content="chien, toutou, animaux de compagnies, meilleur ami de l'homme, meilleur ami de la femme" />
     <meta name="author" content="Thibaut Lemichel" />
-    <link rel="stylesheet" href="../CSS/ProjetChien.css" />
+    <link rel="stylesheet" href="../CSS/Header.css" />
+    <link rel="stylesheet" href="../CSS/header_login.css" />
     <link rel="stylesheet" href="../CSS/Tout savoir sur l'adoption.css" />
 </head>
 
