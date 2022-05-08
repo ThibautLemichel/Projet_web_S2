@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="../CSS/ProjetChien.css" />
-<link rel="stylesheet" href="../CSS/Contact.css" />
+<link rel="stylesheet" href="../CSS/informations.css" />
 <html lang="fr-fr">
 <head>
     <meta charset="utf-8" />
@@ -29,6 +29,7 @@
                     <input type="text" name="prenom" placeholder="Votre Prenom" value= "<?php echo $prenom; ?>"/>
                     <input type="text" name="mdp" placeholder="Votre mot de passe" value= "<?php echo $mdp; ?>"/>
                     <input type="text" name="pseudo" placeholder="Votre pseudo" value= "<?php echo $pseudo; ?>"/>
+                    <br>
                     <input type="submit" value="Mettre à jour" />
                 </form>
             </div>

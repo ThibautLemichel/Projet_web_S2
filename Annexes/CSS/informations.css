@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+    padding: 25px;
+    background-color : floralwhite;
+}
+
+h3{
+    font-size:30px;
+    color: saddlebrown;
+}
+
+input[type=text]{
+    width: 50%;
+    background-color: whitesmoke;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+input[type=submit]{
+    width: 25%;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 14px -7px black;
+}
+
+#titre{
+    margin: 20px;
+}
+
+form{
+    margin : 50px;
+}
