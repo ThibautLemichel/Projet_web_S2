@@ -3,7 +3,9 @@
     background-color: saddlebrown;
 }
 
-
+body{
+    background-color: floralwhite;
+}
 
 h1,h3{
     text-align: center;
@@ -13,11 +15,20 @@ div{
     margin-bottom: 30px;
 }
 
+.premiere_div{
+    background-color: white;
+}
+
+.ajout_sujet{
+    background-color: white;
+}
+
 table{
     width: 75%;
     border: solid black 2px;
     border-radius: 5px;
     margin : 25px auto  25px auto;
+    background-color: white;
 }
 
 .Sujet{
