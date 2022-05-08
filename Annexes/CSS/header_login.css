@@ -160,7 +160,7 @@ input[type=text] {
     cursor: pointer;
     border-color : saddlebrown;
     color: saddlebrown;
-    margin-left: 10px;
+    margin-left: 30px;
     transition: all 0.3s ease-out;
     background-color: floralwhite;
     font-size: 1.3rem;
