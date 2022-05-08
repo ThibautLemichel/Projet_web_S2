@@ -78,7 +78,7 @@
 
                             echo "</tr>";
                             echo "<tr>";
-                                echo "<td colspan='2'><button>Envoyer</button></td>";
+                                echo "<td colspan='2'><button class='bouton_forum'>Envoyer</button></td>";
                                 echo "</form>";
                             echo "</tr>";
                         }else{
@@ -100,7 +100,7 @@
                 echo "<input type='hidden' name='indice' value='($i)'>";
                 echo "<input type='text' placeholder='Nom du sujet...' name='sujet'></input>";
                 echo "<td colspan='2'><textarea name='message' placeholder='Votre message'></textarea></td>";
-                echo "<td colspan='2'><button>Envoyer</button></td>";
+                echo "<td colspan='2'><button class='bouton_forum'>Envoyer</button></td>";
             echo "</form>";
         echo "</div>";
     }else{
