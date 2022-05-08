@@ -116,25 +116,7 @@ nav > ul > li:hover > a {
     animation : sousmenu 1s forwards ;  /*le forwards permet que l'animation reste fixe � la fin de celle-ci*/
 }
 /*Fin menu*/
-/*D�but haut de page*/
-/*#header > img {
-    margin-top : 10px;
-    margin-left : 30%;
-    float : left;
-}
 
-#header > p {
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size : 60px;
-    float : left;
-}
-
-#header > p > a{
-    text-decoration : none;
-    color : black;
-}*/
-/*fin haut de page*/
 /*d�but footer*/
 .footer{
     background-color : antiquewhite;

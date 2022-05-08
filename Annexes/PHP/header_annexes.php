@@ -1,6 +1,43 @@
 <div id="header">
         <img id="logo" src="../Images/LogoChien1.jpg" alt="Notre super logo" />
         <p><a href="../../index.php">Les toutous</a></p>
+        <?php
+        if (!isset($_SESSION['Pseudo'])) {
+        ?>
+        <div class=popup>
+                <div class="box">
+                    <a href="#popup1" class="button">Se connecter</a>
+                </div>
+                <div id="popup1" class="popupp">
+                    <div class="popup1">
+                        <h2>Se connecter</h2>
+                        <a href="#" class="cross">&times;</a>
+                        <form action="Annexes/PHP/test_connexion.php" method="post" class="login">
+                            <fieldset>
+                                <input type="text" name="email" placeholder="Adresse mail" required>
+                                </br>
+                                <input type="text" name="passwd" placeholder="Mot de passe" required>
+                                </br>
+                                <input type="submit" name="Envoyer" value="Connecter" class="bouton_login" />
+                                
+                            </fieldset>
+                        </form>
+                        <a href='Annexes/PHP/creation_compte.php'><button id="button_creation_compte">Créer un compte</button></a>
+                    </div>
+                </div>
+            </div>
+            <?php
+        } else {
+            echo "<a href='Annexes/PHP/deconnexion.php' class='deconnexion'><button id='button_creation_compte'>Déconnexion</button></a>";
+        ?>
+            <!--<div id="Titre">
+                <div class="Titre">
+                    <?php //echo "<h1>Bienvenue $_SESSION[Pseudo]</h1>" ?>
+                </div>
+            </div>-->
+        <?php
+        }
+        ?>
         <nav>
             <!--Ici commence le menu en haut de la page-->
             <ul>
@@ -29,4 +66,4 @@
                 </li>
             </ul>
         </nav>  <!--Ici finit le menu en haut de la page-->
-    </div>
+</div>

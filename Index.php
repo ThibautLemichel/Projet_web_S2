@@ -4,9 +4,11 @@ session_start();
 
 
 <!DOCTYPE html>
-<link rel="stylesheet" href="Annexes/CSS/ProjetChien.css" />
+<link rel="stylesheet" href="Annexes/CSS/Header.css" />
 <link rel="stylesheet" href="Annexes/CSS/Acceuil.css" />
 <link rel="stylesheet" href="Annexes/CSS/login.css" />
+<link rel="stylesheet" href="Annexes/CSS/header_login.css" />
+
 <html lang="fr-fr">
 
 <head>
@@ -14,7 +16,7 @@ session_start();
     <title>Projet chien</title>
     <meta name="description" content="Trouve le chien de tes rêves" />
     <meta name="keywords" content="chien, toutou, animaux de compagnies, meilleur ami de l'homme, meilleur ami de la femme" />
-    <meta name="author" content="Thibaut Lemichel" />
+    <meta name="author" content=" Enzo Sergiani Thibaut Lemichel Hippolyte Deparis" />
 </head>
 
 <body>

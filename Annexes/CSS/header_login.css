@@ -1,26 +1,38 @@
+.topheader{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    padding-top : 5px;
+    margin-top : 5px;
+    
+}
 /* Début popup connexion */
-.popup {
+.toppopup {
     background-color: floralwhite;
     overflow: hidden;
     text-align: center;
-    width: 100%;
-    margin-bottom: 30px;
+    width: 55% auto;
+    margin-bottom: 0;
+    float: right;
+    margin-top : 10 px;  
+    padding-top: 30px;
 }
 
-.box {
-    width: 320px;
-    margin-left: 32%;
+.topbox {
+    width: 220px;
+    margin-left: 0;
     margin-bottom : 10px;
-    padding-top: 10rem;
+    padding-top: 0;
     background: rgba(255,255,255,0.3);
-    padding: 2.5rem;
-    border: 2px solid saddlebrown;
+    padding: 0;
+    border: 0px solid saddlebrown;
     border-radius: 20px/50px;
+    
 }
 
-.button {
+.topbutton {
     font-size: 1.3rem;
-    padding: 1rem;
+    padding: 10px;;
     color: saddlebrown;
     border: 2px solid saddlebrown;
     border-radius: 20px/50px;
@@ -30,12 +42,12 @@
     transition: all 0.3s ease-out;
 }
 
-    .button:hover {
+    .topbutton:hover {
         background: saddlebrown;
         color: floralwhite;
     }
 
-.popupp {
+.toppopupp {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -47,12 +59,12 @@
     opacity: 0;
 }
 
-    .popupp:target {
+    .toppopupp:target {
         visibility: visible;
         opacity: 1;
     }
 
-.popup1 {
+.toppopup1 {
     margin: 6rem auto;
     padding: 2rem;
     background: floralwhite;
@@ -62,11 +74,11 @@
     transition: all 0.4s ease-in-out;
 }
 
-.popup1 h2 {
+.toppopup1 h2 {
     color : saddlebrown;
 }
 
-    .popup1 .cross {
+    .toppopup1 .topcross {
         position: absolute;
         top: 1rem;
         right: 1.5rem;
@@ -77,9 +89,17 @@
         color: black;
     }
 
-        .popup1 .cross:hover {
+        .toppopup1 .topcross:hover {
             color: saddlebrown;
         }
+
+.deconnexion {
+    border: 0px;
+}
+
+.deconnexion:hover{
+    background-color: floralwhite;
+}
 /* Fin popup connexion */
 
 /* Début formulaire de connexion et bouton de création de compte */
@@ -131,5 +151,40 @@ input[type=text] {
     background-color: saddlebrown;
 }
 
+#button_deconnexion{
+    margin-top : 20px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 20px/50px;
+    cursor: pointer;
+    border-color : saddlebrown;
+    color: saddlebrown;
+    margin-left: 0px;
+    transition: all 0.3s ease-out;
+    background-color: floralwhite;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+#button_deconnexion:hover{
+    color: floralwhite;
+    background-color: saddlebrown;
+}
 /* Fin formulaire de connexion et bouton de création de compte */
 
+/* Début Logo + Nom du site */
+.topheader div img {
+    margin-top : 10px;
+}
+
+.topheader div p{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size : 60px;
+}
+
+.topheader div p a{
+    text-decoration: none;
+    color : black;
+}
+/* Fin Logo + Nom du site */
