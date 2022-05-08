@@ -25,35 +25,17 @@ else{
     $pseudo = $user['Pseudo'];
     $admin = $user['Admin'];
 
-    echo "*------------------------------------*";
-    echo "<br>";
-    echo $nom.'<br>';
-    echo $prenom.'<br>';
-    echo $email.'<br>';
-    echo $mdp.'<br>';
-    echo $pseudo.'<br>';
-    echo $admin.'<br>';
-    echo "*------------------------------------*";
-    echo "<br>";
-
+    setcookie('prenom', "", time() - 3600,"/","", 0, 0);
+    setcookie('nom', "", time() - 3600,"/","", 0, 0);
+    setcookie('email', "", time() - 3600,"/","", 0, 0);
 
     $_SESSION['Pseudo'] = $pseudo;
     $_SESSION['Admin'] = $admin;
     $_SESSION['Password'] = $mdp;
 
-    setcookie('Prenom', $prenom, time() + (365*24*3600));
-    setcookie('Nom', $nom, time() + (365*24*3600));
-    setcookie('Email', $email, time() + (365*24*3600));
-
-
-    echo $_COOKIE['nom'].'<br>';
-    echo $_COOKIE['prenom'].'<br>';
-    echo $_COOKIE['email'].'<br>';
-    echo $_SESSION['Password'].'<br>';
-    echo $_SESSION['Pseudo'].'<br>';
-    echo $_SESSION['Admin'].'<br>';
-    echo "*------------------------------------*";
-    echo "<br>";
+    setcookie('prenom', $prenom, time() + (365*24*3600),"/","", 0, 0);
+    setcookie('nom', $nom, time() + (365*24*3600),"/","", 0, 0);
+    setcookie('email', $email, time() + (365*24*3600),"/","", 0, 0);
 
     header("Location:../../Index.php");
     mysqli_close($connexion);

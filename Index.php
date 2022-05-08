@@ -1,8 +1,3 @@
-<?php
-session_start();
-?>
-
-
 <!DOCTYPE html>
 <link rel="stylesheet" href="Annexes/CSS/Header.css" />
 <link rel="stylesheet" href="Annexes/CSS/Acceuil.css" />

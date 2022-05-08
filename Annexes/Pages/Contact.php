@@ -20,15 +20,16 @@
         <div id="box">
             <div id="formulaire">
                 <?php
-                if (isset($_COOKIE['Nom']) && isset($_COOKIE['Prenom']) && isset($_COOKIE['Email'])){
-                    $nom = $_COOKIE['Nom'];
-                    $prenom = $_COOKIE['Prenom'];
-                    $email = $_COOKIE['Email'];
+                if (isset($_COOKIE['nom']) && isset($_COOKIE['prenom']) && isset($_COOKIE['email']) && isset($_SESSION['Pseudo'])){
+                    $nom = $_COOKIE['nom'];
+                    $prenom = $_COOKIE['prenom'];
+                    $email = $_COOKIE['email'];
                 }else{
                     $nom = "";
                     $prenom = "";
                     $email = "";
                 }
+                
                 ?>
                 <h3>Message</h3>
                 <input type="text" class="form" placeholder="Votre Nom" value= "<?php echo $nom; ?>"/>

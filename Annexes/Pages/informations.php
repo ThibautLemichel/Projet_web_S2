@@ -9,7 +9,6 @@
     <meta name="keywords" content="chien, toutou, animaux de compagnies, meilleur ami de l'homme, meilleur ami de la femme" />
     <meta name="author" content="Thibaut Lemichel" />
 </head>
-<?php session_start() ?>
 <body>
     <?php include("../PHP/header_annexes.php") ?>
 
@@ -20,8 +19,8 @@
         <div id="box">
             <div id="formulaire">
                 <?php              
-                $prenom = $_COOKIE['prenom'];
-                $nom = $_COOKIE['nom'];
+                $prenom = $_COOKIE["prenom"];
+                $nom = $_COOKIE["nom"];
                 $mdp = $_SESSION['Password'];
                 $pseudo = $_SESSION['Pseudo'];
                 ?>

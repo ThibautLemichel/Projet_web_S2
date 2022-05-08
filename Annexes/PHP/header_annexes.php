@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <div id="header">
         <div class="topheader">
             <div>
@@ -68,7 +69,9 @@
                     <ul class="sous-menu">
                         <li><a href="../Pages/Contact.php">Contactez-nous</a></li>  <!--grandes pages-->
                         <li><a href="../Pages/forum.php">Nos forums</a></li>
+                        <?php if (isset($_SESSION['Pseudo'])){ ?>
                         <li><a href="../Pages/informations.php">Information à modifier</a></li>
+                        <?php } ?>
                     </ul>
                 </li>
             </ul>
