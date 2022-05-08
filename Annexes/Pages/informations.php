@@ -20,18 +20,18 @@
         <div id="box">
             <div id="formulaire">
                 <?php              
-                $prenom = $_COOKIE['Prenom'];
-                $nom = $_COOKIE['Nom'];
-                $email = $_COOKIE['Email'];
+                $prenom = $_COOKIE['prenom'];
+                $nom = $_COOKIE['nom'];
                 $mdp = $_SESSION['Password'];
                 $pseudo = $_SESSION['Pseudo'];
                 ?>
-                <input type="text" class="form" placeholder="Votre nom" value= "<?php echo $prenom; ?>"/>
-                <input type="text" class="form" placeholder="Votre Prenom" value= "<?php echo $nom; ?>"/>
-                <input type="text" class="form" placeholder="Votre Email" value= "<?php echo $email; ?>"/>
-                <input type="text" class="form" placeholder="Votre mot de passe" value= "<?php echo $mdp; ?>"/>
-                <input type="text" class="form" placeholder="Votre pseudo" value= "<?php echo $pseudo; ?>"/>
-                <input type="submit" class="form" value="Mettre à jour" />
+                <form method="POST" action="../PHP/MaJ_utilisateur.php">
+                    <input type="text" name="nom" placeholder="Votre nom" value= "<?php echo $nom; ?>"/>
+                    <input type="text" name="prenom" placeholder="Votre Prenom" value= "<?php echo $prenom; ?>"/>
+                    <input type="text" name="mdp" placeholder="Votre mot de passe" value= "<?php echo $mdp; ?>"/>
+                    <input type="text" name="pseudo" placeholder="Votre pseudo" value= "<?php echo $pseudo; ?>"/>
+                    <input type="submit" value="Mettre à jour" />
+                </form>
             </div>
         </div>
     </div>

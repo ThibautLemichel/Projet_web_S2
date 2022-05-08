@@ -62,6 +62,7 @@
                     <ul class="sous-menu">
                         <li><a href="../Pages/Contact.php">Contactez-nous</a></li>  <!--grandes pages-->
                         <li><a href="../Pages/forum.php">Nos forums</a></li>
+                        <li><a href="../Pages/informations.php">Information à modifier</a></li>
                     </ul>
                 </li>
             </ul>

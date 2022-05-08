@@ -19,13 +19,43 @@ else{
 	}
     $user = mysqli_fetch_assoc($resultat);
 
-    $_SESSION['Pseudo'] = $user['Pseudo'];
-    $_SESSION['Admin'] = $user['Admin'];
+    $nom = $user['Nom'];
+    $prenom = $user['Prenom'];
+    $email = $user['Email'];
+    $pseudo = $user['Pseudo'];
+    $admin = $user['Admin'];
+
+    echo "*------------------------------------*";
+    echo "<br>";
+    echo $nom.'<br>';
+    echo $prenom.'<br>';
+    echo $email.'<br>';
+    echo $mdp.'<br>';
+    echo $pseudo.'<br>';
+    echo $admin.'<br>';
+    echo "*------------------------------------*";
+    echo "<br>";
+
+
+    $_SESSION['Pseudo'] = $pseudo;
+    $_SESSION['Admin'] = $admin;
     $_SESSION['Password'] = $mdp;
-    setcookie('Prenom', $user['Prenom'], time() + (365*24*3600));
-    setcookie('Nom', $user['Nom'], time() + (365*24*3600));
-    setcookie('Email', $user['Email'], time() + (365*24*3600));
+
+    setcookie('Prenom', $prenom, time() + (365*24*3600));
+    setcookie('Nom', $nom, time() + (365*24*3600));
+    setcookie('Email', $email, time() + (365*24*3600));
+
+
+    echo $_COOKIE['nom'].'<br>';
+    echo $_COOKIE['prenom'].'<br>';
+    echo $_COOKIE['email'].'<br>';
+    echo $_SESSION['Password'].'<br>';
+    echo $_SESSION['Pseudo'].'<br>';
+    echo $_SESSION['Admin'].'<br>';
+    echo "*------------------------------------*";
+    echo "<br>";
+
     header("Location:../../Index.php");
     mysqli_close($connexion);
-}
+}   
 ?>

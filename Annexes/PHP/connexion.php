@@ -8,7 +8,7 @@ $dbname = 'les_toutous'; //nom de la base de données
 $connexion = mysqli_connect($hostname, $username, $password, $dbname);
 
 if (!$connexion) {
-	echo "Erreur de connexion".mysqli_connect_errno();
+	echo "Erreur de connexion".mysqli_connect_error();
 	die();
 }
 ?>
