@@ -1,6 +1,11 @@
 <div id="header">
-        <img id="logo" src="../Images/LogoChien1.jpg" alt="Notre super logo" />
-        <p><a href="../../index.php">Les toutous</a></p>
+        <div class="topheader">
+            <div>
+                <img id="logo" src="../Images/LogoChien1.jpg" alt="Notre super logo" />
+            </div>
+            <div>
+                <p><a href="../../index.php">Les toutous</a></p>
+            </div>
         <?php
         if (!isset($_SESSION['Pseudo'])) {
         ?>
@@ -38,6 +43,7 @@
         <?php
         }
         ?>
+        </div>
         <nav>
             <!--Ici commence le menu en haut de la page-->
             <ul>
