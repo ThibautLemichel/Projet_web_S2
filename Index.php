@@ -47,10 +47,7 @@
                     </div>
                 </div>
             </div>
-            <!--<div class="creation_compte">
-                <h3>Vous n'avez pas de compte ?</h3>
-                <a href='Annexes/PHP/creation_compte.php'>Créer un compte</a>
-            </div>-->
+            <?php }else{ ?>
             <div id="Titre">
                 <div class="Titre">
                     <?php echo "<h1>Bienvenue $_SESSION[Pseudo]</h1>" ?>

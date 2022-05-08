@@ -134,3 +134,7 @@ input[type=text] {
 
 /* Fin formulaire de connexion et bouton de création de compte */
 
+#Fixed{
+    margin-top : 30px;
+}
+
