@@ -19,14 +19,14 @@
                         <h2>Se connecter</h2>
                         <a href="#" class="topcross">&times;</a>
                         <form action="../PHP/test_connexion.php" method="post" class="login">
-                            <fieldset>
+                            
                                 <input type="text" name="email" placeholder="Adresse mail" required>
                                 </br>
                                 <input type="text" name="passwd" placeholder="Mot de passe" required>
                                 </br>
                                 <input type="submit" name="Envoyer" value="Connecter" class="bouton_login" />
                                 
-                            </fieldset>
+                            
                         </form>
                         <a href='../PHP/creation_compte.php'><button id="button_creation_compte">Créer un compte</button></a>
                         
